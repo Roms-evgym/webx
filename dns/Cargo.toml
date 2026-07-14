@@ -24,6 +24,6 @@ clap = { version = "4.5.4", features = ["derive"] }
 rand = { version = "0.8.5", features = ["small_rng"] }
 serde = { version = "1.0.203", features = ["derive"] }
 [profile.release]
-opt-level = 1
+opt-level = "s"
 codegen-units = 1
-lto = false
+panic = "abort"
