@@ -1,3 +1,10 @@
+#[macro_export]
+macro_rules! crashln {
+    ($($arg:tt)*) => {
+        println!($($arg)*);
+    };
+}
+
 mod cli;
 mod config;
 mod http;
